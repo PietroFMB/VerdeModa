@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #333;
+}
+
+.container {
+  margin: 0 160px;
+  padding: 16px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 480px;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("./assets/img/f54edac58c231c6d4eda826bf6c541513e40bf82.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 16px;
+  max-width: 600px;
+}
+
+.hero button {
+  padding: 12px 20px;
+  background: #14b814;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* FEATURED PRODUCTS */
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 20px 0 12px;
+}
+
+.products {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.product {
+  flex: 1 1 30%;           /* 3 columnas distribuidas en el ancho del contenedor */
+  max-width: 33%;          /* para que entren 3 en fila */
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.product img {
+  height: 402px;
+  width: 100%;
+  align-self: stretch;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+
+.product h3 {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 12px 0px 4px;
+}
+
+.product p {
+  font-feature-settings: 'dlig' on;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #638763;
+  margin: 0 0px 16px;
+}
+
+/* COMMITMENT / SUSTAINABLE PRACTICES */
+.commitment {
+  margin-top: 40px;
+}
+
+.commitment h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.commitment-subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.commitment-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.commitment-card {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.commitment-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.commitment-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* FOOTER */
